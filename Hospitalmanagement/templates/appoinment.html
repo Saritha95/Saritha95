@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" type="text/css" href={{url_for('static',filename='css/2.css')}}>
+    <meta charset="UTF-8">
+    <title>Appoinment_view</title>
+</head>
+
+<body>
+<center>
+<h1>Book An appointment Here!!!!</h1>
+
+<form action="/Admin", method="POST">
+ <fieldset>
+     <label for="id">id:</label>
+  <input type="text" id="id" name="id"><br><br>
+ <legend>Appoinment:</legend>
+<label for="patient_name">patient_name</label>
+<input type="text" id="patient_name" name="patient_name"><br><br>
+<p>Please select your gender:</p>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label><br><br><br>
+ <label for="SelectDate">SelectDate</label>
+<input type="date" id="SelectDate" name="SelectDate"><br><br>
+<label for="appt">Choose a time for your meeting:</label>
+<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required><br><br>
+<label for="Doctors_name">Doctors_name</label>
+<input type="text" id="Doctors_name" name="Doctors_name"><br><br>
+<label for="Symptoms">Symptoms</label>
+<input type="text" id="Symptoms" name="Symptoms"><br><br>
+
+
+
+  <input type="submit">
+</fieldset>
+</form>
+
+    </center>
+</body>
+</html>

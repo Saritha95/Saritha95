@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" type="text/css" href={{url_for('static',filename='css/1.css')}}>
+</head>
+
+<body>
+<center>
+
+<style>
+.container{
+    background-color: #aab8e6;
+         font-weight: bold;
+         color: white;
+         padding: 100px;
+         font-size: 16px;
+         border: bold;
+         cursor: pointer;
+}
+</style>
+<div style="max-width:100%" class="container">
+            <div class="list-group">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><b>Patient Register here</b></h3>
+                    </div><br><br>
+                    <div class="panel-body">
+                        <form action="ptregistration" method="POST">
+                            <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">First Name</label>
+                                    <input type="text" name="first_name" class="form-control" placeholder="First name" required="">
+                                    </div><br><br>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">Last Name</label>
+                                    <input type="text" name="last_name" class="form-control" placeholder="Last name" required="">
+                                    </div><br><br>
+                                    <div class="form-group col-md-4">
+                                        <label>Age</label>
+                                        <input class="form-control" name="age" id="birth_date" type="number" min="1" max="99" placeholder="Age" required="">
+                                    </div><br>
+                                </div><br><br>
+                             <!-- Email -->
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" name="patient_email" class="form-control" id="inputEmail4" placeholder="janedoe123@email.com" required="">
+                                    </div>
+                                </div><br><br>
+                                <center>
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </center>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

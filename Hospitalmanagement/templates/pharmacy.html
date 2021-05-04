@@ -1,0 +1,47 @@
+<html>
+<head>
+
+    <center>
+<style>
+body  {
+  background-image: url("1.jpg");
+  background-color: #aabbcc;
+  background-repeat:No-repeat;
+  background-size:1650px;
+}
+</style>
+</head>
+<link rel="stylesheet" type="text/css" href={{url_for('static',filename='css/2.css')}}>
+<body>
+<h1>Medicine Details</h1>
+<form action="/Pharm_adata", method = "POST">
+    <label >id:</label>
+  <input type="text" id="id" name="id">
+  <br><br>
+  <label >MedicineName:</label>
+  <input type="text" id="MedicineName" name="MedicineName">
+  <br><br>
+  <label >Availability</label>
+  <input type="text" id="Availability" name="Availability">
+ <br><br>
+  <label >Mfdate</label>
+  <input type="text" id="Mfdate" name="Mfdate">
+ <br><br>
+  <label >Remaining</label>
+  <input type="text" id="Remaining" name="Remaining">
+ <br><br>
+  <label >Exdate</label>
+  <input type="text" id="Exdate" name="Exdate">
+ <br><br>
+  <label >NeedCount:</label>
+  <input type="text" id="NeedCount" name="NeedCount">
+ <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>This page is for office use only ,Kindly do not change the data.</p>
+<p6>For You Clinic</p6>
+
+</body>
+</center>
+</html>

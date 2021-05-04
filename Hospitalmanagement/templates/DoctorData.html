@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor_view</title>
+</head>
+<body>
+<h1>Patient Appoinment Sheet</h1>
+<style>
+
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+</style>
+<table>
+  <thead>
+    <tr>
+        <th>patient_name</th>
+        <th>gender</th>
+        <th>SelectDate</th>
+        <th>appt</th>
+        <th>Doctors_name</th>
+        <th>Symptoms</th>
+    </tr>
+    </thead>
+    <tbody>
+     {% for row in data %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+    <p align="center"><a href='/Admin'><button class=grey style="height:75px;width:150px">home</button></a></p>
+
+</body>
+</html>

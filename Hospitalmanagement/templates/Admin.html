@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='css/2.css')}}>
+  <title>Clinic</title>
+    <style>
+        .content {
+        font-weight: bold;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+}
+.dropbtn {
+         background-color: #00b8e6;
+         color: white;
+         padding: 16px;
+         font-size: 16px;
+         border: bold;
+         cursor: pointer;
+       }
+
+       .dropdown {
+         position: relative;
+         display: inline-block;
+       }
+
+       .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #bbf9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+       }
+
+       .dropdown-content a {
+         color: black;
+         padding: 10px 0px;
+         text-decoration: none;
+         display: block;
+       }
+
+       .dropdown-content a:hover {background-color: #666699}
+
+       .dropdown:hover .dropdown-content {
+         display: block;
+       }
+
+       .dropdown:hover .dropbtn {
+         background-color:  #bb7a99;
+       }
+    </style>
+</head>
+
+<body>
+</body>
+<center>
+
+
+<div class="content">
+       <div class="dropdown">
+         <button class="dropbtn">DOCTOR</button>
+             <div class="dropdown-content">
+                 <a href="/ad_dc">ADD DOCTOR</a>
+                 <a href="/dc_login">MANAGE</a>
+
+             </div>
+       </div>
+
+       <div class="dropdown">
+         <button class="dropbtn">PATIENT</button>
+           <div class="dropdown-content">
+                 <a href="/dlt_pt">VIEW AN APPOINTMENT</a>
+                 <a href="/up_appt">Update AN APPOINTMENT</a>
+           </div>
+       </div>
+    <div class="dropdown">
+         <button class="dropbtn">FOR PHARMACY</button>
+             <div class="dropdown-content">
+                 <a href="/ph_login">LOGIN</a>
+                 <a href="/Update_Pharma">UPDATE</a>
+             </div>
+       </div>
+    <div class="dropdown">
+         <button class="dropbtn">FOR ADMIN</button>
+             <div class="dropdown-content">
+                 <a href="/ad_login">HOME</a>
+             </div>
+       </div>
+
+</center>
+</body>
+</html>

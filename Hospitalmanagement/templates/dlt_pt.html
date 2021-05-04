@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='css/2.css')}}>
+ <title></title>
+</head>
+<body>
+<style>
+
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+</style>
+<table>
+  <thead>
+    <tr>
+         <th>id</th>
+        <th>patient_name</th>
+        <th>gender</th>
+        <th>SelectDate</th>
+        <th>appt</th>
+        <th>Doctors_name</th>
+        <th>Symptoms</th>
+        <th>link</th>
+    </tr>
+    </thead>
+    <tbody>
+     {% for row in data %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+                <td>{{row[6]}}</td>
+                <td>
+                    <a href="/update">edit</a>
+                    <a href="/delete_appt/{{row.0}}">delete</a>
+                </td>
+            </tr>
+     {% endfor %}
+    </tbody>
+</table>
+<p><a href='/Admin'>Go Back to Admin PAge!</a></p>
+</body>
+</html>

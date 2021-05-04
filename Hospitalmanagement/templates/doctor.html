@@ -1,0 +1,21 @@
+<Doctype html>
+    <head>
+        <title>Flask Intro - login page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='css/2.css')}}>
+    <body>
+    <center>
+        <div class="container">
+            <h1>Doctors login Page</h1>
+            <br>
+            <form action="/DoctorData" method="post">
+                <input name="id" placeholder="id" type="text">
+                <input name="Doctors_name" placeholder="Doctors_name" type="text">
+                <input type="password" placeholder="Password" name="password" >
+                <input class="btn btn-default" type="submit" value="Login">
+            </form>
+        </div>
+    </center>
+    </body>

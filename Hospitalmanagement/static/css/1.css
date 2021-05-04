@@ -1,0 +1,7 @@
+body{
+    border: 2px solid black;
+    padding: 25px;
+    background-image:url('/static/img/2021-04-30.jpg');
+    background-repeat:No-repeat;
+    background-size: 100px;
+}
